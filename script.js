@@ -9,6 +9,8 @@ button1.addEventListener("click", startpattern);
 function startpattern() {
 
     let div;
+    document.getElementById("group").innerHTML = "";
+
 
     for (let i = 0; i < xInput.value; i++){
         div = document.createElement('div');
