@@ -1,12 +1,35 @@
 body {
     background-color:dimgray;
 }
+#buttones {
+    display: flex;
+    left: 50px;
+    position: absolute;
+    top: 50px;
+}
 #button1 {
+    
     height: 30px;
     width: 30px;
     background-color: red;
 }
+#confetti {
+    position: absolute;
+    left: 50px;
+    height: 30px;
+    width: 30px;
+    background-color:rgb(15, 103, 0);
+}
+#group {
+    position: absolute;
+    left: 50px;
+    top: 100px;
+
+}
 .row {
+    
+    top: 100px;
+    left: 100px;
     display: flex;
 
 
