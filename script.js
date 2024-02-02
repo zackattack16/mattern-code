@@ -2,6 +2,7 @@ const xInput = document.getElementById("axisX");
 const yInput = document.getElementById("axisY");
 const choose = document.getElementById("colorChoose");
 const button1 = document.getElementById("button1");
+const clearboard = document.getElementById("clearboard");
 const group = document.getElementById("group");
 const test = document.getElementById("test");
 const button2 = document.getElementById("confetti");
@@ -11,6 +12,7 @@ const brushselector = document.getElementById("brushselector");
 
 button1.addEventListener("click", startpattern);
 let confetterInterval;
+let clearBoardInterval;
 
 
 button2.addEventListener("mousedown", function() {
@@ -20,6 +22,11 @@ button2.addEventListener("mousedown", function() {
 document.addEventListener("mouseup", function() {
     clearInterval(confetterInterval); 
 });
+
+
+
+clearboard.addEventListener("click", clearBoardFunc);
+    
 
 var log = 0;
 
@@ -33,7 +40,27 @@ document.addEventListener("mousedown", logButtons);
 
 
 
+function clearBoardFunc() {
+    start = 0;
+    let min = 1; 
+    const xInput = document.getElementById("axisX");
+    const yInput = document.getElementById("axisY");
 
+    for (let i = 0; i < xInput.value * yInput.value; i++) {
+        ((i) => {
+            setTimeout(() => {
+                let bar = Math.floor(Math.random() * (yInput.value * xInput.value));
+                console.log("Bar: " + bar);
+                const rowelement = document.getElementById("id" + i);
+                console.log(rowelement);
+    
+                if (rowelement) {
+                    rowelement.remove();
+                }
+            }, i * 2); // 200ms delay
+        })(i);
+    }
+}
 function confetter() {
     let min = 1; 
     const xInput = document.getElementById("axisX");
