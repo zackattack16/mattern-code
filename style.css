@@ -21,6 +21,7 @@ body {
     background-color:rgb(15, 103, 0);
 }
 #group {
+    border-radius: 20px;
     position: absolute;
     left: 50px;
     top: 100px;
@@ -34,3 +35,4 @@ body {
 
 
 }
+
