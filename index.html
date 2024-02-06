@@ -6,14 +6,19 @@
     </head>
     <body>
         <div id="inputs">
+            
             <input type="number" id="axisX">
             <input type="number" id="axisY">
             <input type="number" id="size">
             <input type="color" id="colorChoose">
             <label for="shapes">Choose a shape:</label>
             <select name="shapes" id="shapes">
-                <option value="square">square</option>
-                <option value="circles">circles</option>
+                <option value="square">Square</option>
+                <option value="circles">Circles</option>
+            </select>
+            <select name="speed" id="speed">
+                <option value="instant">Instant</option>
+                <option value="slow">Slow</option>
             </select>
         </div>
         <select name="brushes" id="brushselector">
@@ -23,9 +28,9 @@
         <div id="buttones">
 
         
-        <div id="button1"></div>
-        <div id="confetti"></div>
-        <div id="clearboard"></div>
+        <div id="button1">Generate</div>
+        <div id="confetti">Confetti</div>
+        <div id="clearboard">Clear</div>
     </div>
         <div id="group"></div>
         <div id="row"></div>

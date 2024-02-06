@@ -9,6 +9,7 @@ const button2 = document.getElementById("confetti");
 const size = document.getElementById("size");
 const shapes = document.getElementById("shapes")
 const brushselector = document.getElementById("brushselector");
+const speedselector = document.getElementById("speed");
 
 button1.addEventListener("click", startpattern);
 let confetterInterval;
@@ -94,7 +95,14 @@ function startpattern() {
             div2.style.width = "5px";
             div2.style.height = "5px";
             div2.style.border = "0px solid dimgrey";
-            
+            if (speedselector.value == "slow") {
+                            
+                div2.style.transition = "5s";
+            }
+            else if (speedselector.value == "instant") {
+                            
+                div2.style.transition = "0.05s";
+            }
     
             div2.id = ("id" + String(idgen));
             idgen++;

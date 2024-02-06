@@ -1,5 +1,5 @@
 body {
-    background-color:dimgray;
+    background-color:cadetblue;
 }
 #buttones {
     display: flex;
@@ -10,36 +10,38 @@ body {
 #button1 {
     
     height: 30px;
-    width: 30px;
+    width: 60px;
     background-color: red;
+    text-align: center;
 }
 #confetti {
     position: absolute;
-    left: 50px;
+    left: 70px;
     height: 30px;
-    width: 30px;
+    width: 60px;
     background-color:rgb(15, 103, 0);
+    text-align: center;
 }
 #clearboard {
     position: absolute;
-    left: 100px;
+    left: 140px;
     height: 30px;
-    width: 30px;
+    width: 60px;
     background-color:rgb(246, 255, 0);
+    text-align: center;
 }
 #group {
     border-radius: 20px;
     position: absolute;
     left: 50px;
     top: 100px;
-
+    
 }
 .row {
     
     top: 100px;
     left: 100px;
     display: flex;
-
+    
 
 }
-
